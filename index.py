@@ -17,7 +17,7 @@ def conversion(input_files):
             if not os.path.isdir(dest_path):
                 os.makedirs(dest_path)
             images_from_path = convert_from_path(dest_file, output_folder=dest_path)
-
+        # for loop for input files
         for x in input_files:
             dest_path = destination_path + x + '/'
             txt_files = [f for f in os.listdir(dest_path) if f.endswith('.ppm')]
