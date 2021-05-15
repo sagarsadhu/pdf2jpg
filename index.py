@@ -9,6 +9,7 @@ image_save_path = cwd +"/PPM 2 JPG/"
 
 
 def conversion(input_files):
+    # conversion method
     try:
         for x in input_files:
             dest_file = input_path + x
